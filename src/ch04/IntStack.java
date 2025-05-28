@@ -1,8 +1,6 @@
 package ch04;
 
-import java.util.IllegalFormatCodePointException;
-
-public class intStack {
+public class IntStack {
 
     private int[] stk;
     private int capacity;
@@ -16,7 +14,7 @@ public class intStack {
         public OverflowIntException() {}
     }
 
-    public intStack(int maxlen) {
+    public IntStack(int maxlen) {
         ptr = 0;
         capacity = maxlen;
         try {
